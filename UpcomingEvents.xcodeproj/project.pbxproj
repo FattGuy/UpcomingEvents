@@ -15,6 +15,12 @@
 		F2B7522726AB490D0091EB2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B7522526AB490D0091EB2E /* LaunchScreen.storyboard */; };
 		F2B7523226AB490D0091EB2E /* UpcomingEventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7523126AB490D0091EB2E /* UpcomingEventsTests.swift */; };
 		F2B7523D26AB490D0091EB2E /* UpcomingEventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7523C26AB490D0091EB2E /* UpcomingEventsUITests.swift */; };
+		F2B7524D26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2B7524B26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf */; };
+		F2B7524E26AB4A0A0091EB2E /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B7524C26AB4A0A0091EB2E /* mock.json */; };
+		F2B7525226AB4B940091EB2E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525126AB4B940091EB2E /* Event.swift */; };
+		F2B7525326AB4B940091EB2E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525126AB4B940091EB2E /* Event.swift */; };
+		F2B7525626AB4BC70091EB2E /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525526AB4BC70091EB2E /* EventService.swift */; };
+		F2B7525726AB4BC70091EB2E /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525526AB4BC70091EB2E /* EventService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,10 @@
 		F2B7523826AB490D0091EB2E /* UpcomingEventsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpcomingEventsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B7523C26AB490D0091EB2E /* UpcomingEventsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsUITests.swift; sourceTree = "<group>"; };
 		F2B7523E26AB490D0091EB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B7524B26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Conflicting Events_ iOS Take-home Assignment.pdf"; sourceTree = "<group>"; };
+		F2B7524C26AB4A0A0091EB2E /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		F2B7525126AB4B940091EB2E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F2B7525526AB4BC70091EB2E /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 		F2B7520E26AB490B0091EB2E = {
 			isa = PBXGroup;
 			children = (
+				F2B7524A26AB49F40091EB2E /* Docs */,
 				F2B7521926AB490B0091EB2E /* UpcomingEvents */,
 				F2B7523026AB490D0091EB2E /* UpcomingEventsTests */,
 				F2B7523B26AB490D0091EB2E /* UpcomingEventsUITests */,
@@ -99,6 +110,7 @@
 		F2B7521926AB490B0091EB2E /* UpcomingEvents */ = {
 			isa = PBXGroup;
 			children = (
+				F2B7524F26AB4B560091EB2E /* Network */,
 				F2B7521A26AB490B0091EB2E /* AppDelegate.swift */,
 				F2B7521C26AB490B0091EB2E /* SceneDelegate.swift */,
 				F2B7521E26AB490B0091EB2E /* ViewController.swift */,
@@ -126,6 +138,40 @@
 				F2B7523E26AB490D0091EB2E /* Info.plist */,
 			);
 			path = UpcomingEventsUITests;
+			sourceTree = "<group>";
+		};
+		F2B7524A26AB49F40091EB2E /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				F2B7524B26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf */,
+				F2B7524C26AB4A0A0091EB2E /* mock.json */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
+		F2B7524F26AB4B560091EB2E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F2B7525426AB4BB80091EB2E /* Service */,
+				F2B7525026AB4B760091EB2E /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F2B7525026AB4B760091EB2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2B7525126AB4B940091EB2E /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2B7525426AB4BB80091EB2E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F2B7525526AB4BC70091EB2E /* EventService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +280,8 @@
 				F2B7522726AB490D0091EB2E /* LaunchScreen.storyboard in Resources */,
 				F2B7522426AB490D0091EB2E /* Assets.xcassets in Resources */,
 				F2B7522226AB490B0091EB2E /* Main.storyboard in Resources */,
+				F2B7524D26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf in Resources */,
+				F2B7524E26AB4A0A0091EB2E /* mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B7525226AB4B940091EB2E /* Event.swift in Sources */,
 				F2B7521F26AB490B0091EB2E /* ViewController.swift in Sources */,
 				F2B7521B26AB490B0091EB2E /* AppDelegate.swift in Sources */,
+				F2B7525626AB4BC70091EB2E /* EventService.swift in Sources */,
 				F2B7521D26AB490B0091EB2E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B7525726AB4BC70091EB2E /* EventService.swift in Sources */,
+				F2B7525326AB4B940091EB2E /* Event.swift in Sources */,
 				F2B7523226AB490D0091EB2E /* UpcomingEventsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
