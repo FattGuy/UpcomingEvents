@@ -6,7 +6,7 @@
 //
 
 protocol UpcomingEventsView: AnyObject {
-    func showEvents(_ events: [Event])
+    func showEvents(_ eventDicts: [EventDict])
     func showError(_ errorMessage: String)
 }
 
@@ -18,9 +18,11 @@ class UpcomingEventPresenter {
     
     weak var view: UpcomingEventsView?
     var service: EventProvider.Type = EventService.self
+    var eventsDict: [String: [Event]]
     
     init(with view: UpcomingEventsView) {
         self.view = view
+        self.eventsDict = [:]
     }
     
     func start() {
@@ -39,11 +41,21 @@ class UpcomingEventPresenter {
     }
     
     func sortEvents(_ events: [Event]) {
-        var events = events
-        events = events.sorted(by: {
-            $0.startDate.compare($1.startDate) == .orderedAscending
-        })
+        self.groupEvents(events.sorted(by: {
+            $0.startFullDate.compare($1.startFullDate) == .orderedAscending
+        }))
+    }
+    
+    func groupEvents(_ events: [Event]) {
+        eventsDict = Dictionary(grouping: events, by: { $0.startDate.toString(.monthDayYear) ?? "" })
         
-        self.view?.showEvents(events ?? [])
+        var eventDicts = [EventDict]()
+        
+        for dict in eventsDict.sorted(by: { $0.key.localizedCompare($1.key) == .orderedAscending }) {
+            let eventDict = EventDict(title: dict.key, events: dict.value)
+            eventDicts.append(eventDict)
+        }
+        
+        self.view?.showEvents(eventDicts)
     }
 }

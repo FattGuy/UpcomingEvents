@@ -25,8 +25,8 @@ class UpcomingEventsViewController: UIViewController {
 }
 
 extension UpcomingEventsViewController: UpcomingEventsView {
-    func showEvents(_ events: [Event]) {
-        self.tableSource?.updateDataSource(with: events)
+    func showEvents(_ eventDicts: [EventDict]) {
+        self.tableSource?.updateDataSource(with: eventDicts)
     }
     
     func showError(_ errorMessage: String) {

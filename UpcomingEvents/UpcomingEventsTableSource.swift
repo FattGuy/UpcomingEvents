@@ -9,11 +9,11 @@ import UIKit
 
 class UpcomingEventsTableSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     
-    var events: [Event]
+    var eventDicts: [EventDict]
     var tableView: UITableView
     
-    init(with tableView: UITableView, events: [Event] = []) {
-        self.events = events
+    init(with tableView: UITableView, eventDicts: [EventDict] = []) {
+        self.eventDicts = eventDicts
         self.tableView = tableView
         self.tableView.register(UINib(nibName: "UpcomingEventCell", bundle: nil), forCellReuseIdentifier: "UpcomingEventCell")
         
@@ -22,25 +22,32 @@ class UpcomingEventsTableSource: NSObject, UITableViewDataSource, UITableViewDel
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.tableFooterView = UIView()
-        self.tableView.showsVerticalScrollIndicator = false
-        self.tableView.showsHorizontalScrollIndicator = false
-        self.tableView.separatorStyle = .none
     }
     
-    func updateDataSource(with events: [Event]) {
-        self.events.removeAll()
-        self.events = events
+    func updateDataSource(with eventDicts: [EventDict]) {
+        self.eventDicts.removeAll()
+        self.eventDicts = eventDicts
         
         self.tableView.reloadData()
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return eventDicts.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
+        return eventDicts[section].events.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UpcomingEventCell", for: indexPath) as! UpcomingEventCell
-        cell.setup(events[indexPath.row])
+        let event = eventDicts[indexPath.section].events[indexPath.row]
+        cell.setup(event)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let title = eventDicts[section].title
+        return title
     }
 }

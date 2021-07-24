@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVj-EP-7z7">
-                        <rect key="frame" x="16" y="0.0" width="352" height="194"/>
+                        <rect key="frame" x="16" y="8" width="352" height="194"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="M0A-wB-JeO">
                                 <rect key="frame" x="8" y="8" width="336" height="178"/>
@@ -72,8 +72,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="rVj-EP-7z7" secondAttribute="trailing" constant="16" id="BMi-uB-CdX"/>
-                    <constraint firstItem="rVj-EP-7z7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NzW-hb-6wB"/>
-                    <constraint firstAttribute="bottom" secondItem="rVj-EP-7z7" secondAttribute="bottom" constant="16" id="aXF-Jw-Xd8"/>
+                    <constraint firstItem="rVj-EP-7z7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NzW-hb-6wB"/>
+                    <constraint firstAttribute="bottom" secondItem="rVj-EP-7z7" secondAttribute="bottom" constant="8" id="aXF-Jw-Xd8"/>
                     <constraint firstItem="rVj-EP-7z7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yni-Lh-a1u"/>
                 </constraints>
             </tableViewCellContentView>
