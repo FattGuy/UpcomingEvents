@@ -11,7 +11,7 @@ protocol EventProvider {
     static func getEvents(completion: @escaping (Result<[Event]?, Error>) -> Void)
 }
 
-class EventService {
+class EventService: EventProvider {
     static func getEvents(completion: @escaping (Result<[Event]?, Error>) -> Void) {
         do {
             let filename = "mock"
