@@ -11,6 +11,8 @@ struct Event: Codable {
     var title: String
     var start: String
     var end: String
+    var hasConflicts: Bool?
+    var nextConflictedEventTitle: String?
     
     var startFullDate: Date {
         guard let date = start.toDate(.monthDayYearTime) else { return Date() }

@@ -11,11 +11,13 @@ class UpcomingEventsTableSource: NSObject, UITableViewDataSource, UITableViewDel
     
     var eventDicts: [EventDict]
     var tableView: UITableView
+    var presenter: UpcomingEventPresentation?
     
-    init(with tableView: UITableView, eventDicts: [EventDict] = []) {
+    init(with tableView: UITableView, eventDicts: [EventDict] = [], presenter: UpcomingEventPresentation? = nil) {
         self.eventDicts = eventDicts
         self.tableView = tableView
         self.tableView.register(UINib(nibName: "UpcomingEventCell", bundle: nil), forCellReuseIdentifier: "UpcomingEventCell")
+        self.presenter = presenter
         
         super.init()
         
@@ -42,7 +44,7 @@ class UpcomingEventsTableSource: NSObject, UITableViewDataSource, UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UpcomingEventCell", for: indexPath) as! UpcomingEventCell
         let event = eventDicts[indexPath.section].events[indexPath.row]
-        cell.setup(event)
+        cell.setup(event, self.presenter)
         return cell
     }
     
