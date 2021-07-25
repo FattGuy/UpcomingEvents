@@ -13,36 +13,17 @@
 		F2B7522226AB490B0091EB2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B7522026AB490B0091EB2E /* Main.storyboard */; };
 		F2B7522426AB490D0091EB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B7522326AB490D0091EB2E /* Assets.xcassets */; };
 		F2B7522726AB490D0091EB2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B7522526AB490D0091EB2E /* LaunchScreen.storyboard */; };
-		F2B7523226AB490D0091EB2E /* UpcomingEventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7523126AB490D0091EB2E /* UpcomingEventsTests.swift */; };
 		F2B7524D26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2B7524B26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf */; };
 		F2B7524E26AB4A0A0091EB2E /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B7524C26AB4A0A0091EB2E /* mock.json */; };
 		F2B7525226AB4B940091EB2E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525126AB4B940091EB2E /* Event.swift */; };
-		F2B7525326AB4B940091EB2E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525126AB4B940091EB2E /* Event.swift */; };
 		F2B7525626AB4BC70091EB2E /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525526AB4BC70091EB2E /* EventService.swift */; };
-		F2B7525726AB4BC70091EB2E /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525526AB4BC70091EB2E /* EventService.swift */; };
 		F2CDC1DC26AB8711003EAE3F /* UpcomingEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1DB26AB8711003EAE3F /* UpcomingEventsPresenter.swift */; };
-		F2CDC1DD26AB8711003EAE3F /* UpcomingEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1DB26AB8711003EAE3F /* UpcomingEventsPresenter.swift */; };
 		F2CDC1E326AB9112003EAE3F /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1E226AB9112003EAE3F /* DateFormatterExtensions.swift */; };
-		F2CDC1E426AB9112003EAE3F /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1E226AB9112003EAE3F /* DateFormatterExtensions.swift */; };
 		F2CDC1E826AB9251003EAE3F /* UpcomingEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1E626AB9251003EAE3F /* UpcomingEventCell.swift */; };
-		F2CDC1E926AB9251003EAE3F /* UpcomingEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1E626AB9251003EAE3F /* UpcomingEventCell.swift */; };
 		F2CDC1EA26AB9251003EAE3F /* UpcomingEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CDC1E726AB9251003EAE3F /* UpcomingEventCell.xib */; };
-		F2CDC1EB26AB9251003EAE3F /* UpcomingEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CDC1E726AB9251003EAE3F /* UpcomingEventCell.xib */; };
 		F2CDC1ED26AB9272003EAE3F /* UpcomingEventsTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1EC26AB9272003EAE3F /* UpcomingEventsTableSource.swift */; };
-		F2CDC1EE26AB9272003EAE3F /* UpcomingEventsTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1EC26AB9272003EAE3F /* UpcomingEventsTableSource.swift */; };
 		F2CDC1F026ABA8FD003EAE3F /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1EF26ABA8FD003EAE3F /* AppStyle.swift */; };
-		F2CDC1F126ABA8FD003EAE3F /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1EF26ABA8FD003EAE3F /* AppStyle.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F2B7522E26AB490D0091EB2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2B7520F26AB490B0091EB2E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2B7521626AB490B0091EB2E;
-			remoteInfo = UpcomingEvents;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F2B7521726AB490B0091EB2E /* UpcomingEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpcomingEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,9 +34,6 @@
 		F2B7522326AB490D0091EB2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B7522626AB490D0091EB2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2B7522826AB490D0091EB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2B7522D26AB490D0091EB2E /* UpcomingEventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpcomingEventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2B7523126AB490D0091EB2E /* UpcomingEventsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsTests.swift; sourceTree = "<group>"; };
-		F2B7523326AB490D0091EB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B7524B26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Conflicting Events_ iOS Take-home Assignment.pdf"; sourceTree = "<group>"; };
 		F2B7524C26AB4A0A0091EB2E /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
 		F2B7525126AB4B940091EB2E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -76,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2B7522A26AB490D0091EB2E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,7 +62,6 @@
 			children = (
 				F2B7524A26AB49F40091EB2E /* Docs */,
 				F2B7521926AB490B0091EB2E /* UpcomingEvents */,
-				F2B7523026AB490D0091EB2E /* UpcomingEventsTests */,
 				F2B7521826AB490B0091EB2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				F2B7521726AB490B0091EB2E /* UpcomingEvents.app */,
-				F2B7522D26AB490D0091EB2E /* UpcomingEventsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,15 +88,6 @@
 				F2B7522526AB490D0091EB2E /* LaunchScreen.storyboard */,
 			);
 			path = UpcomingEvents;
-			sourceTree = "<group>";
-		};
-		F2B7523026AB490D0091EB2E /* UpcomingEventsTests */ = {
-			isa = PBXGroup;
-			children = (
-				F2B7523126AB490D0091EB2E /* UpcomingEventsTests.swift */,
-				F2B7523326AB490D0091EB2E /* Info.plist */,
-			);
-			path = UpcomingEventsTests;
 			sourceTree = "<group>";
 		};
 		F2B7524A26AB49F40091EB2E /* Docs */ = {
@@ -213,24 +173,6 @@
 			productReference = F2B7521726AB490B0091EB2E /* UpcomingEvents.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F2B7522C26AB490D0091EB2E /* UpcomingEventsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2B7524426AB490E0091EB2E /* Build configuration list for PBXNativeTarget "UpcomingEventsTests" */;
-			buildPhases = (
-				F2B7522926AB490D0091EB2E /* Sources */,
-				F2B7522A26AB490D0091EB2E /* Frameworks */,
-				F2B7522B26AB490D0091EB2E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F2B7522F26AB490D0091EB2E /* PBXTargetDependency */,
-			);
-			name = UpcomingEventsTests;
-			productName = UpcomingEventsTests;
-			productReference = F2B7522D26AB490D0091EB2E /* UpcomingEventsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,10 +184,6 @@
 				TargetAttributes = {
 					F2B7521626AB490B0091EB2E = {
 						CreatedOnToolsVersion = 12.5.1;
-					};
-					F2B7522C26AB490D0091EB2E = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = F2B7521626AB490B0091EB2E;
 					};
 				};
 			};
@@ -263,7 +201,6 @@
 			projectRoot = "";
 			targets = (
 				F2B7521626AB490B0091EB2E /* UpcomingEvents */,
-				F2B7522C26AB490D0091EB2E /* UpcomingEventsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,14 +216,6 @@
 				F2B7522226AB490B0091EB2E /* Main.storyboard in Resources */,
 				F2B7524D26AB4A0A0091EB2E /* Conflicting Events_ iOS Take-home Assignment.pdf in Resources */,
 				F2B7524E26AB4A0A0091EB2E /* mock.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2B7522B26AB490D0091EB2E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2CDC1EB26AB9251003EAE3F /* UpcomingEventCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,30 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2B7522926AB490D0091EB2E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2B7525726AB4BC70091EB2E /* EventService.swift in Sources */,
-				F2B7525326AB4B940091EB2E /* Event.swift in Sources */,
-				F2CDC1EE26AB9272003EAE3F /* UpcomingEventsTableSource.swift in Sources */,
-				F2B7523226AB490D0091EB2E /* UpcomingEventsTests.swift in Sources */,
-				F2CDC1E426AB9112003EAE3F /* DateFormatterExtensions.swift in Sources */,
-				F2CDC1F126ABA8FD003EAE3F /* AppStyle.swift in Sources */,
-				F2CDC1E926AB9251003EAE3F /* UpcomingEventCell.swift in Sources */,
-				F2CDC1DD26AB8711003EAE3F /* UpcomingEventsPresenter.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F2B7522F26AB490D0091EB2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2B7521626AB490B0091EB2E /* UpcomingEvents */;
-			targetProxy = F2B7522E26AB490D0091EB2E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F2B7522026AB490B0091EB2E /* Main.storyboard */ = {
@@ -507,48 +413,6 @@
 			};
 			name = Release;
 		};
-		F2B7524526AB490E0091EB2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UpcomingEventsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fengchang.assignment.UpcomingEventsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpcomingEvents.app/UpcomingEvents";
-			};
-			name = Debug;
-		};
-		F2B7524626AB490E0091EB2E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UpcomingEventsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fengchang.assignment.UpcomingEventsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpcomingEvents.app/UpcomingEvents";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -566,15 +430,6 @@
 			buildConfigurations = (
 				F2B7524226AB490E0091EB2E /* Debug */,
 				F2B7524326AB490E0091EB2E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2B7524426AB490E0091EB2E /* Build configuration list for PBXNativeTarget "UpcomingEventsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2B7524526AB490E0091EB2E /* Debug */,
-				F2B7524626AB490E0091EB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
