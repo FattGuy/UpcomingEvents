@@ -22,8 +22,8 @@ class UpcomingEventCell: UITableViewCell {
         containerView.layer.cornerRadius = 8
         containerView.backgroundColor = UIColor.backgroundGray()
         titleLabel.text = event.title
-        startDateLabel.text = event.start
-        endDateLabel.text = event.end
+        startDateLabel.text = event.startFullDateString
+        endDateLabel.text = event.endFullDateString
         conflictButton.isHidden = !(event.hasConflicts ?? false)
         conflictButton.setImage(AppStyle.conflictIcon, for: .normal)
         self.event = event

@@ -8,7 +8,7 @@
 protocol UpcomingEventsView: AnyObject {
     func showEvents(_ eventDicts: [EventDict])
     func showError(_ errorMessage: String)
-    func showConflictedEvent(_ title: String)
+    func showConflictedEvent(_ titles: Set<String>)
 }
 
 protocol UpcomingEventPresentation {
@@ -44,11 +44,17 @@ class UpcomingEventPresenter: UpcomingEventPresentation {
     }
     
     func sortEvents(_ events: [Event]) -> [Event] {
-        var sorted = events.sorted(by: {
+        var sortedWithEndDate = events.sorted(by: {
+            $0.endFullDate.compare($1.endFullDate) == .orderedAscending
+        })
+        sortedWithEndDate = self.markConflicts(&sortedWithEndDate)
+        
+        var sortedWithStartDate = sortedWithEndDate.sorted(by: {
             $0.startFullDate.compare($1.startFullDate) == .orderedAscending
         })
-        sorted = self.markConflicts(&sorted)
-        return sorted
+        sortedWithStartDate = self.markConflicts(&sortedWithStartDate)
+        
+        return sortedWithStartDate
     }
     
     func groupEvents(_ events: [Event]) {
@@ -67,19 +73,33 @@ class UpcomingEventPresenter: UpcomingEventPresentation {
     func markConflicts(_ sorted: inout [Event]) -> [Event] {
         //1. a.start < b.start, a.end < b.end, a.end > b.start
         //2. a.start > b.start, a.start < b.end
-        for i in 0..<sorted.count-1 {
-            let endIntervalA = sorted[i].endFullDate.timeIntervalSince1970
-            let startIntervalB = sorted[i+1].startFullDate.timeIntervalSince1970
-            let endIntervalB = sorted[i+1].endFullDate.timeIntervalSince1970
+        for i in 1..<sorted.count {
+            let startIntervalA = sorted[i-1].startFullDate.timeIntervalSince1970
+            let endIntervalA = sorted[i-1].endFullDate.timeIntervalSince1970
+            let startIntervalB = sorted[i].startFullDate.timeIntervalSince1970
+            let endIntervalB = sorted[i].endFullDate.timeIntervalSince1970
             
-            if startIntervalB < endIntervalA && endIntervalA < endIntervalB {
+            if startIntervalA == startIntervalB && endIntervalA == endIntervalB {
+                sorted[i-1].hasConflicts = true
                 sorted[i].hasConflicts = true
-                sorted[i+1].hasConflicts = true
-                sorted[i].nextConflictedEventTitle = sorted[i+1].title
+                let title = sorted[i].title
+                sorted[i-1].conflictedTitles.insert(title)
+                let prevTitle = sorted[i-1].title
+                sorted[i].conflictedTitles.insert(prevTitle)
+            } else if startIntervalB < endIntervalA && endIntervalA < endIntervalB {
+                sorted[i-1].hasConflicts = true
+                sorted[i].hasConflicts = true
+                let title = sorted[i].title
+                sorted[i-1].conflictedTitles.insert(title)
+                let prevTitle = sorted[i-1].title
+                sorted[i].conflictedTitles.insert(prevTitle)
             } else if startIntervalB < endIntervalA && endIntervalA > endIntervalB {
+                sorted[i-1].hasConflicts = true
                 sorted[i].hasConflicts = true
-                sorted[i+1].hasConflicts = true
-                sorted[i].nextConflictedEventTitle = sorted[i+1].title
+                let title = sorted[i].title
+                sorted[i-1].conflictedTitles.insert(title)
+                let prevTitle = sorted[i-1].title
+                sorted[i].conflictedTitles.insert(prevTitle)
             }
         }
         
@@ -87,7 +107,9 @@ class UpcomingEventPresenter: UpcomingEventPresentation {
     }
     
     func handleConflictIconClick(_ event: Event) {
-        guard let title = event.nextConflictedEventTitle else { return }
-        self.view?.showConflictedEvent(title)
+        //TODO: Find the way to fix this - event might have multiple conflicted events
+        guard event.conflictedTitles.count > 0 else { return }
+        let titles = event.conflictedTitles
+        self.view?.showConflictedEvent(titles)
     }
 }

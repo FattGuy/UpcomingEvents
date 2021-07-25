@@ -12,7 +12,14 @@ struct Event: Codable {
     var start: String
     var end: String
     var hasConflicts: Bool?
-    var nextConflictedEventTitle: String?
+    var conflictedTitles: Set<String> = Set<String>()
+    
+    enum CodingKeys: String, CodingKey {
+            // include only those that you want to decode/encode
+            case title
+            case start
+            case end
+        }
     
     var startFullDate: Date {
         guard let date = start.toDate(.monthDayYearTime) else { return Date() }
@@ -22,6 +29,16 @@ struct Event: Codable {
     var endFullDate: Date {
         guard let date = end.toDate(.monthDayYearTime) else { return Date() }
         return date
+    }
+    
+    var startFullDateString: String {
+        guard let dateString = startFullDate.toString(.shortMonthDayYearTime) else { return "" }
+        return dateString
+    }
+    
+    var endFullDateString: String {
+        guard let dateString = endFullDate.toString(.shortMonthDayYearTime) else { return "" }
+        return dateString
     }
     
     var startDate: Date {

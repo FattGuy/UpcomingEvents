@@ -41,8 +41,9 @@ extension UpcomingEventsViewController: UpcomingEventsView {
         present(alert, animated: true)
     }
     
-    func showConflictedEvent(_ title: String) {
-        let alert = UIAlertController(title: "Event", message: title, preferredStyle: .alert)
+    func showConflictedEvent(_ titles: Set<String>) {
+        let message = titles.joined(separator: "\n")
+        let alert = UIAlertController(title: "Conflicting Event", message: message, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         

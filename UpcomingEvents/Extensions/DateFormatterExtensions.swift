@@ -14,6 +14,7 @@ extension DateFormatter {
     enum CustomDateFormat: String {
         case monthDayYearTime = "MMMM dd, yyyy hh:mm a"
         case monthDayYear = "MMMM dd, yyyy"
+        case shortMonthDayYearTime = "MMM dd, yyyy hh:mm a"
     }
     
     fileprivate class func string(from date: Date?, with format: CustomDateFormat) -> String? {

@@ -18,22 +18,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVj-EP-7z7">
-                        <rect key="frame" x="16" y="8" width="352" height="194"/>
+                        <rect key="frame" x="16" y="8" width="352" height="202"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M0A-wB-JeO">
-                                <rect key="frame" x="8" y="8" width="336" height="178"/>
+                                <rect key="frame" x="8" y="8" width="336" height="186"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AZH-en-459">
-                                        <rect key="frame" x="0.0" y="0.0" width="336" height="132"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="336" height="140"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmi-nC-g1M">
-                                                <rect key="frame" x="0.0" y="0.0" width="298" height="132"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="298" height="140"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO2-3G-PVt">
-                                                <rect key="frame" x="306" y="0.0" width="30" height="132"/>
+                                                <rect key="frame" x="306" y="0.0" width="30" height="140"/>
                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                 <connections>
                                                     <action selector="tappedConflictButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="11n-os-ImV"/>
@@ -42,7 +42,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="o9T-Rp-vC4">
-                                        <rect key="frame" x="0.0" y="140" width="336" height="38"/>
+                                        <rect key="frame" x="0.0" y="148" width="336" height="38"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Gb8-Uq-MOy">
                                                 <rect key="frame" x="0.0" y="0.0" width="336" height="17"/>
@@ -95,7 +95,7 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="rVj-EP-7z7" secondAttribute="trailing" constant="16" id="BMi-uB-CdX"/>
                     <constraint firstItem="rVj-EP-7z7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NzW-hb-6wB"/>
-                    <constraint firstAttribute="bottom" secondItem="rVj-EP-7z7" secondAttribute="bottom" constant="8" id="aXF-Jw-Xd8"/>
+                    <constraint firstAttribute="bottom" secondItem="rVj-EP-7z7" secondAttribute="bottom" id="aXF-Jw-Xd8"/>
                     <constraint firstItem="rVj-EP-7z7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yni-Lh-a1u"/>
                 </constraints>
             </tableViewCellContentView>

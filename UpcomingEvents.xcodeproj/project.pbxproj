@@ -23,8 +23,6 @@
 		F2B7525726AB4BC70091EB2E /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7525526AB4BC70091EB2E /* EventService.swift */; };
 		F2CDC1DC26AB8711003EAE3F /* UpcomingEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1DB26AB8711003EAE3F /* UpcomingEventsPresenter.swift */; };
 		F2CDC1DD26AB8711003EAE3F /* UpcomingEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1DB26AB8711003EAE3F /* UpcomingEventsPresenter.swift */; };
-		F2CDC1E026AB8954003EAE3F /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1DF26AB8954003EAE3F /* UIViewControllerExtensions.swift */; };
-		F2CDC1E126AB8954003EAE3F /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1DF26AB8954003EAE3F /* UIViewControllerExtensions.swift */; };
 		F2CDC1E326AB9112003EAE3F /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1E226AB9112003EAE3F /* DateFormatterExtensions.swift */; };
 		F2CDC1E426AB9112003EAE3F /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1E226AB9112003EAE3F /* DateFormatterExtensions.swift */; };
 		F2CDC1E826AB9251003EAE3F /* UpcomingEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1E626AB9251003EAE3F /* UpcomingEventCell.swift */; };
@@ -74,7 +72,6 @@
 		F2B7525126AB4B940091EB2E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F2B7525526AB4BC70091EB2E /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		F2CDC1DB26AB8711003EAE3F /* UpcomingEventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsPresenter.swift; sourceTree = "<group>"; };
-		F2CDC1DF26AB8954003EAE3F /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		F2CDC1E226AB9112003EAE3F /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		F2CDC1E626AB9251003EAE3F /* UpcomingEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventCell.swift; sourceTree = "<group>"; };
 		F2CDC1E726AB9251003EAE3F /* UpcomingEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingEventCell.xib; sourceTree = "<group>"; };
@@ -211,7 +208,6 @@
 		F2CDC1DE26AB8941003EAE3F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F2CDC1DF26AB8954003EAE3F /* UIViewControllerExtensions.swift */,
 				F2CDC1E226AB9112003EAE3F /* DateFormatterExtensions.swift */,
 			);
 			path = Extensions;
@@ -370,7 +366,6 @@
 				F2B7525626AB4BC70091EB2E /* EventService.swift in Sources */,
 				F2B7521D26AB490B0091EB2E /* SceneDelegate.swift in Sources */,
 				F2CDC1E826AB9251003EAE3F /* UpcomingEventCell.swift in Sources */,
-				F2CDC1E026AB8954003EAE3F /* UIViewControllerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +376,6 @@
 				F2B7525726AB4BC70091EB2E /* EventService.swift in Sources */,
 				F2B7525326AB4B940091EB2E /* Event.swift in Sources */,
 				F2CDC1EE26AB9272003EAE3F /* UpcomingEventsTableSource.swift in Sources */,
-				F2CDC1E126AB8954003EAE3F /* UIViewControllerExtensions.swift in Sources */,
 				F2B7523226AB490D0091EB2E /* UpcomingEventsTests.swift in Sources */,
 				F2CDC1E426AB9112003EAE3F /* DateFormatterExtensions.swift in Sources */,
 				F2CDC1F126ABA8FD003EAE3F /* AppStyle.swift in Sources */,
