@@ -33,7 +33,6 @@ extension UpcomingEventsViewController: UpcomingEventsView {
         let alert = UIAlertController(title: "An error occured", message: errorMessage, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
-        
         alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: { [weak self] action in
             self?.presenter?.getEvents()
         }))
