@@ -8,26 +8,61 @@
 import XCTest
 @testable import UpcomingEvents
 
-class UpcomingEventsTests: XCTestCase {
-
+class UpcomingEventPresenterTests: XCTestCase {
+    
+    private var view: MockUpcomingEventsView!
+    private var presenter: UpcomingEventPresenter!
+        
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        view = MockUpcomingEventsView()
+        presenter = UpcomingEventPresenter(with: view)
+        presenter.service = MockEventService.self
     }
-
+    
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        view = nil
+        presenter = nil
+        MockEventService.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testStart() throws {
+        presenter.start()
+        
+        XCTAssertTrue(1 > 0)
     }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+extension UpcomingEventPresenterTests {
+    
+    private class MockUpcomingEventsView: UpcomingEventsView {
+        func showEvents(_ eventDicts: [EventDict]) {
+            
+        }
+        
+        func showError(_ errorMessage: String) {
+            
+        }
+        
+        func showConflictedEvent(_ titles: Set<String>) {
+            
         }
     }
-
+    
+    private class MockEventService: EventProvider {
+        
+        // Use a static helper, since our services are static classes.  This ensures everything is cleared on tearDown()
+        class MockEventServiceHelper {
+//            var commentaryCategories = [CommentaryCategory]()
+        }
+        
+        static var helper = MockEventServiceHelper()
+        
+        static func tearDown() {
+            helper = MockEventServiceHelper()
+        }
+        
+        static func getEvents(completion: @escaping (Result<[Event]?, Error>) -> Void) {
+            
+        }
+    }
 }
