@@ -34,7 +34,6 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO2-3G-PVt">
                                                 <rect key="frame" x="306" y="0.0" width="30" height="140"/>
-                                                <color key="tintColor" systemColor="systemRedColor"/>
                                                 <connections>
                                                     <action selector="tappedConflictButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="11n-os-ImV"/>
                                                 </connections>
@@ -113,9 +112,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

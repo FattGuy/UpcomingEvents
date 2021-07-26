@@ -15,4 +15,16 @@ extension UIColor {
     static func backgroundGray() -> UIColor {
         return .systemGroupedBackground
     }
+    
+    static func facebookBlue() -> UIColor {
+        return UIColor(hex: "3b5998")
+    }
+    
+    static func facebookGray() -> UIColor {
+        return UIColor(hex: "DFE3EE")
+    }
+    
+    static func facebookBlack() -> UIColor {
+        return UIColor(hex: "000000")
+    }
 }

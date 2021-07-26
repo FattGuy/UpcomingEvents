@@ -23,6 +23,7 @@
 		F2CDC1EA26AB9251003EAE3F /* UpcomingEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CDC1E726AB9251003EAE3F /* UpcomingEventCell.xib */; };
 		F2CDC1ED26AB9272003EAE3F /* UpcomingEventsTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1EC26AB9272003EAE3F /* UpcomingEventsTableSource.swift */; };
 		F2CDC1F026ABA8FD003EAE3F /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC1EF26ABA8FD003EAE3F /* AppStyle.swift */; };
+		F2CE08DC26AF21240032D077 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE08DB26AF21240032D077 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F2CDC1E726AB9251003EAE3F /* UpcomingEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingEventCell.xib; sourceTree = "<group>"; };
 		F2CDC1EC26AB9272003EAE3F /* UpcomingEventsTableSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsTableSource.swift; sourceTree = "<group>"; };
 		F2CDC1EF26ABA8FD003EAE3F /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		F2CE08DB26AF21240032D077 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				F2CDC1E226AB9112003EAE3F /* DateFormatterExtensions.swift */,
+				F2CE08DB26AF21240032D077 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				F2B7521B26AB490B0091EB2E /* AppDelegate.swift in Sources */,
 				F2CDC1ED26AB9272003EAE3F /* UpcomingEventsTableSource.swift in Sources */,
 				F2CDC1DC26AB8711003EAE3F /* UpcomingEventsPresenter.swift in Sources */,
+				F2CE08DC26AF21240032D077 /* UIColorExtensions.swift in Sources */,
 				F2CDC1F026ABA8FD003EAE3F /* AppStyle.swift in Sources */,
 				F2B7525626AB4BC70091EB2E /* EventService.swift in Sources */,
 				F2B7521D26AB490B0091EB2E /* SceneDelegate.swift in Sources */,

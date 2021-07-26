@@ -20,12 +20,13 @@ class UpcomingEventCell: UITableViewCell {
     
     func setup(_ event: Event, _ presenter: UpcomingEventPresentation?) {
         containerView.layer.cornerRadius = 8
-        containerView.backgroundColor = UIColor.backgroundGray()
+        containerView.backgroundColor = UIColor.facebookGray()
         titleLabel.text = event.title
         startDateLabel.text = event.startFullDateString
         endDateLabel.text = event.endFullDateString
         conflictButton.isHidden = !(event.hasConflicts ?? false)
         conflictButton.setImage(AppStyle.conflictIcon, for: .normal)
+        conflictButton.tintColor = UIColor.facebookBlue()
         self.event = event
         self.presenter = presenter
     }
